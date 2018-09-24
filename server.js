@@ -43,6 +43,12 @@ app.get('/about',(req,res)=>{
   })
 })
 
+app.get('/Projects',(req,res)=>{
+  res.render("projects.hbs",{
+    pageTitile : "Projects Page"
+  })
+})
+
 app.get('/bad',(req,res)=>{
   res.send({
     errorMessage : "bad request"
